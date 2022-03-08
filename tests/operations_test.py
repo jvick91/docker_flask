@@ -1,9 +1,6 @@
 """Testing the Calculator"""
-from calculator.operations import Operations
-
-
-
-
+from calculator import Calculator
+from calculator.operations import Addition, Subtraction, Multiplication
 
 def test_calculator_result_property():
     """Testing the Calculator"""
@@ -18,14 +15,14 @@ def test_calculator_result_property():
 def test_calculator_add_method():
     """Testing the Calculator"""
 
-    assert Operations.add(1,1) == 2
+    assert Addition.add(1,1) == 2
 
 def test_calculator_subtract_method():
     """Testing the Calculator Subtract"""
 
-    assert Operations.subtract(1,1) == 0
+    assert Subtraction.subtract(1,1) == 0
 
 def test_calculator_multiply_method():
     """Testing the Calculator Subtract"""
 
-    assert Operations.multiply(1,1) == 1
+    assert Multiplication.multiply(1,1) == 1
