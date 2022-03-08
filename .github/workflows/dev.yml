@@ -1,9 +1,14 @@
 name: Development Workflow
 
 on:
+  push:
+    branches:
+      - 'test'
+    tags:
+      - 'v*'
   pull_request:
     branches:
-      - 'main'
+      - 'test'
 
 jobs:
   run_pytest:
